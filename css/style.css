@@ -74,7 +74,7 @@ h6 {
 /*START*/
 @font-face {
   font-family: Room;
-  src: url("/fonts/Room-Light.ttf");
+  src: url("../fonts/Room-Light.ttf");
 }
 * {
   font-family: 'Room';
@@ -262,6 +262,7 @@ h6 {
   margin-top: 70px;
   color: #FFF;
   padding-top: 20px;
+  cursor: pointer;
 }
 @media (max-width: 1575px) {
   .button {
