@@ -89,8 +89,6 @@ h6 {
   cursor: default;
 }
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#1363DF), color-stop(62.09%, #47B5FF));
-  background: linear-gradient(90deg, #1363DF 0%, #47B5FF 62.09%);
   overflow-y: auto;
   height: 400%;
 }
