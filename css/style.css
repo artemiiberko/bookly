@@ -451,7 +451,7 @@ body {
     font-size: 30px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 395px) {
   .left-side__big-title {
     font-size: 26px;
   }
@@ -568,7 +568,7 @@ body {
     font-size: 30px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 395px) {
   .right-side__big-title {
     font-size: 26px;
   }
