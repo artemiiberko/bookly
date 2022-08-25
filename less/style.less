@@ -11,38 +11,38 @@
     cursor: default;
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
-}
-::-webkit-scrollbar-thumb {
-  background: #2da7ff;
-  border: 0px none #2da7ff;
-  border-radius: 100px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #0095ff;
-}
-::-webkit-scrollbar-thumb:active {
-  background: #004a80;
-}
-::-webkit-scrollbar-track {
-  background: #bde4ff;
-  border: 0px none #bde4ff;
-}
-::-webkit-scrollbar-track:hover {
-  background: #bde4ff;
-}
-::-webkit-scrollbar-track:active {
-  background: #bde4ff;
-}
-::-webkit-scrollbar-corner {
-  background: #bde4ff;
-}
+// ::-webkit-scrollbar {
+//   width: 6px;
+//   height: 6px;
+// }
+// ::-webkit-scrollbar-button {
+//   width: 0px;
+//   height: 0px;
+// }
+// ::-webkit-scrollbar-thumb {
+//   background: #2da7ff;
+//   border: 0px none #2da7ff;
+//   border-radius: 100px;
+// }
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #0095ff;
+// }
+// ::-webkit-scrollbar-thumb:active {
+//   background: #004a80;
+// }
+// ::-webkit-scrollbar-track {
+//   background: #bde4ff;
+//   border: 0px none #bde4ff;
+// }
+// ::-webkit-scrollbar-track:hover {
+//   background: #bde4ff;
+// }
+// ::-webkit-scrollbar-track:active {
+//   background: #bde4ff;
+// }
+// ::-webkit-scrollbar-corner {
+//   background: #bde4ff;
+// }
 
 .wrapper {
     background: linear-gradient(90deg, #1363DF 0%, #47B5FF 62.09%);
@@ -69,6 +69,10 @@
             @media(max-height: 610px) or (max-width: 600px) {
                 padding-top: 40px;
                 padding-left: 80px;
+            }
+            @media (max-width: 420px) {
+                padding-top: 30px;
+                padding-left: 50px;
             }
 		}
 }
@@ -152,6 +156,12 @@ right: 0;
     @media(max-width: 1280px) {
         width: 150px;
     }
+    @media(max-width: 420px) {
+        width: 120px;
+    }
+    @media (max-width: 320px) {
+        width: 100px;
+    }
 }
 .title {
     font-size: 200px;
@@ -161,11 +171,14 @@ right: 0;
     @media(max-height: 770px) {
         font-size: 150px;
     }
-    @media(max-height: 610px) or (max-width: 600px) {
+    @media(max-height: 610px) or (max-width: 750px) {
         font-size: 100px;
     }
     @media (max-width: 420px) {
         font-size: 80px;
+    }
+    @media (max-width: 320px) {
+        font-size: 70px;
     }
 }
 .subtitle {
@@ -184,6 +197,10 @@ right: 0;
         font-size: 22px;
         line-height: 24px;
     }
+    @media (max-width: 320px) {
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 .button {
     background-color: #48B6FF;
@@ -200,7 +217,7 @@ right: 0;
         padding: 12px;
         max-width: 280px;
     }
-    @media(max-height: 610px) {
+    @media(max-height: 610px) or (max-width: 420px) {
         font-size: 26px;
         padding: 8px;
         max-width: 220px;
@@ -228,6 +245,14 @@ right: 0;
             }
             @media (max-width: 500px) {
                 font-size: 50px;
+                letter-spacing: 10px;
+            }
+            @media (max-width: 360px) {
+                font-size: 45px;
+            }
+            @media (max-width: 290px) {
+                font-size: 35px;
+                letter-spacing: 5px;
             }
 
 		}
@@ -266,6 +291,9 @@ right: 0;
             @media (max-width: 500px) {
                 font-size: 20px;
             }
+            @media (max-width: 360px) {
+                font-size: 18px;
+            }
 		}
 
 		&__item {
@@ -288,6 +316,9 @@ right: 0;
             }
             @media (max-width: 500px) {
                 font-size: 30px;
+            }
+            @media (max-width: 360px) {
+                font-size: 26px;
             }
 		}
 
@@ -317,6 +348,10 @@ right: 0;
                 font-size: 16px;
                 padding-top: 12px;
             }
+            @media (max-width: 360px) {
+                font-size: 14px;
+                padding-top: 11px;
+            }
 		}
 
 		&__text {
@@ -330,6 +365,9 @@ right: 0;
             }
             @media (max-width: 500px) {
                 font-size: 14px;
+            }
+            @media (max-width: 360px) {
+                font-size: 12px;
             }
 		}
 }
@@ -346,6 +384,9 @@ right: 0;
             }
             @media (max-width: 500px) {
                 font-size: 20px;
+            }
+            @media (max-width: 360px) {
+                font-size: 18px;
             }
 		}
 
@@ -371,6 +412,9 @@ right: 0;
             @media (max-width: 500px) {
                 font-size: 30px;
             }
+            @media (max-width: 360px) {
+                font-size: 26px;
+            }
 		}
 
 		&__block {
@@ -388,7 +432,7 @@ right: 0;
             flex-direction: column;
             justify-content: space-around;
             height: 100%;
-            @media(max-height: 610px) or (max-width: 600px) {
+            @media(max-height: 610px) or (max-width: 780px) {
                 font-size: 50px;
             }
             @media (max-width: 500px) {
@@ -398,6 +442,9 @@ right: 0;
 
 		&__first-item {
             padding-left: 15%;
+            @media (max-width: 420px) {
+                padding-left: 10%;
+            }
 		}
 
 		&__number {
@@ -407,7 +454,7 @@ right: 0;
             bottom: 0;
             opacity: 0.15;
             margin-bottom: -20px;
-            @media(max-height: 610px) or (max-width: 600px) {
+            @media(max-height: 610px) or (max-width: 780px) {
                 font-size: 150px;
                 margin-bottom: -10px;
             }
@@ -424,15 +471,23 @@ right: 0;
 
 		&__second-item {
             padding-left: 30%;
+            @media (max-width: 420px) {
+                padding-left: 20%;
+            }
 		}
 
 		&__third-item {
             padding-left: 45%;
+            @media (max-width: 420px) {
+                padding-left: 30%;
+            }
 		}
 
 		&__fourth-item {
             padding-left: 60%;
-            
+            @media (max-width: 420px) {
+                padding-left: 40%;
+            }
 		}
         .item {
             position: relative;
